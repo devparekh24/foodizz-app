@@ -15,4 +15,8 @@
   .summary h2 {
     font-size: 2rem;
     margin-top: 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 11%, #5005ab 57%, #b517b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
