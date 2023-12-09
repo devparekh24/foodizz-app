@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data.json'
 import './AvailableMeals.css'
+import Card from '../../UI/Card/Card'
 
 const AvailableMeals = () => {
 
@@ -10,9 +11,11 @@ const AvailableMeals = () => {
 
     return (
         <section className='meals'>
-            <ul>
-                {mealsList}
-            </ul>
+            <Card>
+                <ul>
+                    {mealsList}
+                </ul>
+            </Card>
         </section>
     )
 }
