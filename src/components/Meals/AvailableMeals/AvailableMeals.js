@@ -8,6 +8,7 @@ const AvailableMeals = () => {
 
     const mealsList = data.map((item) => {
         return <MealItem
+            id={item.id}
             key={item.id}
             name={item.name}
             description={item.description}
