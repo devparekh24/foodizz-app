@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './Header.css'
-import bgImg from '../../../assets/meals.jpg'
+import bgImg from '../../../assets/b3.jpg'
 import HeaderCartBtn from '../HeaderCartBtn/HeaderCartBtn'
 const Header = () => {
     return (
