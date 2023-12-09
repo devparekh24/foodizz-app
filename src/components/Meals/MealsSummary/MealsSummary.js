@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './MealsSummary.css'
 const MealsSummary = () => {
     return (
         <section className='summary'>
