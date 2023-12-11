@@ -2,9 +2,9 @@ import React from 'react'
 import CartIcon from '../../Cart/CartIcon'
 import './HeaderCartBtn.css'
 
-const HeaderCartBtn = () => {
+const HeaderCartBtn = (props) => {
     return (
-        <button className='button'>
+        <button className='button' onClick={props.onCartShow}>
             <span className='icon'>
                 <CartIcon />
             </span>
