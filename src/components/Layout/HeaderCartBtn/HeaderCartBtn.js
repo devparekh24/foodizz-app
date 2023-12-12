@@ -7,6 +7,7 @@ const HeaderCartBtn = (props) => {
 
     const cartCtx = useContext(cartContext)
     const [btnAnimated, setBtnAnimated] = useState(false)
+    const [numOfCartItems, setNumOfCartItems] = useState(0)
     const { items } = cartCtx
 
     useEffect(() => {
@@ -24,9 +25,13 @@ const HeaderCartBtn = (props) => {
         }
     }, [items])
 
-    const numOfCartItems = items.reduce((acc, currentItem) => {
-        return acc += currentItem.amount
-    }, 0)
+    useEffect(() => {
+        setNumOfCartItems(
+            items.reduce((acc, currentItem) => {
+                return acc += currentItem.amount
+            }, 0)
+        )
+    }, [items])
 
     return (
         <button className={`button ${btnAnimated ? 'bump' : ''}`} onClick={props.onCartShow}>

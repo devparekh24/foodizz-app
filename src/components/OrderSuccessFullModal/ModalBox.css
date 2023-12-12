@@ -1,0 +1,13 @@
+.order-modal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  max-height: 16rem;
+}
+
+.order-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
